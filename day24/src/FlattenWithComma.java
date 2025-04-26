@@ -5,7 +5,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 //Flatten a list of comma-separated strings into a unique list of strings.
 
-        public class FlattenWithComma {
+public class FlattenWithComma {
     public static void main(String[] args) {
         List<String> lists= Arrays.asList("1,2","3,4","5","1,2");
         HashSet<String> set=new HashSet<>(lists);

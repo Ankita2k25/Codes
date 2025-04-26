@@ -8,8 +8,8 @@ public class DistinctChar {
     public static void main(String[] args) {
         List<String> list= Arrays.asList("ankhi","raj","debli","okay");
         List<Character> ch = list.stream()
-                .flatMap(str -> str.chars().mapToObj(c -> (char) c)) // Flatten all chars into one stream
-                .distinct() // Keep only unique characters
+                .flatMap(str -> str.chars().mapToObj(c -> (char) c))
+                .distinct()
                 .collect(Collectors.toList());
         System.out.println(ch);
     }
